@@ -34,9 +34,9 @@ public class GadgetController {
         return gadgetService.listAll();
     }
 
-    @GetMapping("/{reference}")
+    @GetMapping("/{id}")
     public Optional<Gadget> getGadget(@PathVariable("id") int id) {
-        return gadgetService.getSupplement(id);
+        return gadgetService.getGadget(id);
     }
 
     @PostMapping("/new")
